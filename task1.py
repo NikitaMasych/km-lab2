@@ -60,10 +60,10 @@ for node, true_val, approx_val in zip(cheb_nodes, true_values, approx_values):
 
 # Побудова графіків
 x_vals = np.linspace(a, b, 100)
-plt.plot(x_vals, f(x_vals), label='Функція f(x)')
+plt.plot(x_vals, f(x_vals), 'black', label='Функція f(x)')
 
 # Точки для функції в вузлах Чебишева
-plt.scatter((b - a) * cheb_nodes / 2 + (a + b) / 2, true_values, c='blue', marker='o', label='Функція f(x) в вузлах')
+plt.scatter((b - a) * cheb_nodes / 2 + (a + b) / 2, true_values, c='black', marker='o', label='Функція f(x) в вузлах')
 
 # Точки для апроксимованого графіку в тих же вузлах
 plt.scatter((b - a) * cheb_nodes / 2 + (a + b) / 2, approx_values, c='red', marker='x', label='Точки апроксимованого графіку')
