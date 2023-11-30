@@ -39,9 +39,6 @@ print("Квадратична апроксимація: y = {:.4f} * x^2 + {:.4f
 plt.scatter(x_data, y_data_linear, label='Лінійні дані', color='black')
 plt.scatter(x_data, y_data_quadratic, label='Квадратичні дані', color='red')
 
-print(x_data)
-print(y_data_linear)
-
 plt.plot(x_vals, y_linear, label='Лінійна апроксимація', linestyle='dashed', color='black')
 plt.plot(x_vals, y_quadratic, label='Квадратична апроксимація', linestyle='dashed', color='red')
 
